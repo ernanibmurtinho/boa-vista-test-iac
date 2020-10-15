@@ -54,15 +54,10 @@ pd.DataFrame({"Param":
              })
 
 
-# ## Create clients for EC2, S3, IAM, and Redshift
+# ## Create clients for S3, IAM, and Redshift
 
 
 import boto3
-
-ec2 = boto3.resource('ec2',
-                        region_name='us-west-2',
-                        aws_access_key_id=KEY,
-                        aws_secret_access_key=SECRET)
 
 s3 = boto3.resource('s3',
                         region_name='us-west-2',
